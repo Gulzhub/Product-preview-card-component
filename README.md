@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution](https://github.com/Gulzhub/product-preview-card-component)
-- Live Site URL: [Live](https://gulzhub.github.io/product-preview-card-component/)
+- Solution URL: [My solution](https://github.com/Gulzhub/Product-preview-card-component)
+- Live Site URL: [Live](https://gulzhub.github.io/Product-preview-card-component/)
 
 
 ### Built with
