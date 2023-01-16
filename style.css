@@ -1,0 +1,152 @@
+/* ---RESET--- */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  :root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-greyish-blue: hsl(228, 12%, 48%);
+  }
+
+  body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  main {
+    background-color: white;
+    width: 85vw;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+   
+}
+
+.title, .description {
+    color: var(--dark-greyish-blue);
+    padding-bottom: 1rem;
+}
+
+.product-name {
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    line-height: 1;
+    padding-bottom: 0.625rem;
+    color : var(--very-dark-blue);
+}
+
+.description {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.price {
+    padding-bottom: 1rem;    
+    display: flex;
+    align-items: center;
+}
+
+.actual {
+    font-size: 1.7rem;
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    padding-right: 1rem;
+}
+
+.past {
+    font-size: 0.7rem;
+    color: var(--dark-greyish-blue);
+}
+
+.cart {
+    background-color: var(--dark-cyan);
+    color: white;
+    padding: 1rem;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.cart img {
+    padding-right: 0.5rem;
+}
+
+.cart:hover {
+    background-color: hsl(158, 36%, 20%)
+}
+
+.desktop-only {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .mobile-only {
+        display: none;
+    }
+    .desktop-only {
+        display: block;
+    }
+    
+    main {
+        align-self: end;
+        width: 592px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .title, .description {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 2rem;
+        align-self: center;
+    }
+    footer {
+        align-self: start;
+    }
+
+    .product-name {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+}
