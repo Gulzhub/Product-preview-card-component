@@ -108,7 +108,8 @@
 }
 
 .cart:hover {
-    background-color: hsl(158, 36%, 20%)
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;
 }
 
 .desktop-only {
